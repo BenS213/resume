@@ -1,0 +1,44 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    --accent-clr: lightblue;
+    --bg-clr: brown;
+}
+
+.header{
+    display: flex;
+    justify-content: space between;
+    background-color: var(--bg-clr);
+    width: 100%;
+
+}
+
+.header h1 {
+    display: block;
+    background-color: var(--accent-clr); 
+    color: darkblue;
+    padding:5px 5px 5px 50px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    font-size: large;
+}
+
+.nav a {
+    text-decoration: none;
+    color: var(--accent-clr);
+    margin: 20px;
+    border-bottom: 2px solid var(--accent-clr);
+}
+
+.hero h2 {
+    color: var(--bg-clr);
+    position:absolute;
+    right: 0;
+    margin: 20px 45px;
+}
