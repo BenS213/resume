@@ -31,7 +31,7 @@ header {
 header h1 {
     padding: 0;
     margin: 0;
-    font-size: 36px;
+    font-size: 40px;
 }
 header h1 a {
     color: #DF7861;
@@ -54,7 +54,7 @@ header nav ul {
 
 header nav li a {
     padding: 10px 15px;
-    font-weight: lighter;
+    font-weight: light;
     font-size: 1.55vw;
     text-decoration: none;
     color: #DF7861;
@@ -137,13 +137,16 @@ header nav li a {
     flex: 1 1 33%;
     flex-wrap: wrap;
     height: 200px;
-    min-width: 200px;
+    min-width: 300px;
     border: 5px solid var(--accent-clr);
     opacity: .8;
     background-image: url(../images/coming-soon.png);
     background-size: cover;
     background-repeat: no-repeat;
     margin: 10px;
+    text-decoration: none;
+    color: var(--bg-clr);
+
 }
 
 .text {
@@ -151,8 +154,8 @@ header nav li a {
     background-color:#94B49F;
     width: fit-content;
     margin: 10px 0;
-
 }
+
 
 .card:hover {
     border: 5px solid gold;
@@ -232,3 +235,38 @@ header nav li a {
     header nav ul li a {
       font-size: 20px;
     }
+
+    .aboutMe {
+        flex-direction: column;
+        align-items: center;
+    }
+    .aboutMe h1 {
+        border-right: none;
+        border-bottom: 2px solid var(--bg-clr);
+    }
+
+    .work {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .work h1 {
+        border-right: none;
+        border-bottom: 2px solid var(--bg-clr);
+    }
+
+    .contactMe {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactMe h1 {
+        border-right: none;
+        border-bottom: 2px solid var(--bg-clr);
+        margin-bottom: 1em;
+    }
+
+    .contactMe .contact-links{
+        gap: 1em;
+    }
+}
