@@ -1,5 +1,5 @@
 :root {
-    --accent-clr: #21326a;
+    --accent-clr: #101010;
 }
 
 * {
@@ -9,7 +9,7 @@
     line-height: 1.5em;
 }
 body {
-    background-color: #FFF;
+    background-color: #FaFaFa;
     font-family: 'roboto', sans-serif;
 
 }
@@ -26,19 +26,27 @@ header {
     z-index: 999;
     width: 100%;
     padding: 0 35px 0 35px;
+    box-shadow: 0 10px 100px var(--accent-clr);
 }
 header h1 {
     padding: 0;
     margin: 0;
     font-size: 40px;
+    margin-left: 8%;
+
 }
 header h1 a {
     text-decoration: none;
     color: #FFF;
+    transition: 0.2s ease-out;
+
 }
 /* NAV */
 header nav {
+    display: flex;
     align-items: center;
+
+    
 }
 
 header nav ul {
@@ -57,8 +65,13 @@ header nav li a {
     text-decoration: none;
     color: #FFF;
     text-transform: uppercase;
+    transition: 0.2s ease-out;
 }
 
+/* hover effects */
+header :hover {
+    color: #757575;
+}
 
 /*Main styling */
 
@@ -81,8 +94,8 @@ header nav li a {
 
 .aboutMe p {
     flex: 1 1 90%;
-    padding: 10px;
-
+    padding: 0 10px;
+    color: rgb(93, 93, 93)
 }
 
 /* work */
@@ -113,42 +126,55 @@ header nav li a {
 }
 
 .card {
-    flex: 1 1 33%;
+    flex: 1 1 33%; 
     flex-wrap: wrap;
-    height: 200px;
     min-width: 300px;
-    border: 5px solid var(--accent-clr);
+    min-height: 200px;
+    /* border: 5px solid var(--accent-clr); */
     background-image: url(../images/coming-soon.png);
     background-size: cover;
     background-repeat: no-repeat;
     margin: 10px;
     text-decoration: none;
     color: var(--accent-clr);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px var(--accent-clr);
+    transition: 0.2s ease-out;
 
 }
 
+#Horiseon {
+    background-image: url(../images/HoriseonScreenCapture.png);
+    flex-basis: 100%;
+}
+
 .text {
-    padding: 5px;
+    padding: 0 10px;
     background-color:var(--accent-clr);
     color: #FFF;
     width: fit-content;
     margin: 10px 0;
+    text-align: right;
+    border-radius: 0 10px 10px 0;
 }
 
 
 .card:hover {
-    border: 5px solid gold;
+    transform: translateY(-5px);
+    box-shadow: 5px 5px 20px #4a4a4a;
+
 }
 
-.card:hover > .text {
-    background-color: gold;
-}
 
 /* contact me styling */
 
 .contactMe {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     display: flex;
-    color: var(--accent-clr);
+    background-color: var(--accent-clr);
+    color: #FFF;
     margin: 5px 0;
 
 }
@@ -157,9 +183,10 @@ header nav li a {
     flex: 1 1 10%;
     flex-wrap: wrap;
     font-size: 20px;
-    border-right: 2px solid var(--accent-clr);
-    padding: 10px;
+    border-right: 2px solid #fafafa;
+    padding: 0 10px;
     text-align: right;
+    margin:10px 0;
 
 }
 
@@ -180,8 +207,8 @@ header nav li a {
 
 .link a {
     text-decoration: none;
-    color: var(--accent-clr);
-    border-bottom: 2px solid var(--accent-clr);
+    color: #FFF;
+    border-bottom: 2px solid #FFF;
     font-weight: bold;
     justify-content: space-around;
     opacity: .8;
@@ -201,6 +228,7 @@ header nav li a {
     header h1 {
       width: 100%;
       text-align: center;
+      margin-left: 0;
     }
   
     header nav ul {
@@ -241,10 +269,10 @@ header nav li a {
     .contactMe h1 {
         border-right: none;
         border-bottom: 2px solid var(--accent-clr);
-        margin-bottom: 1em;
     }
 
     .contactMe .contact-links{
         gap: 1em;
+        margin-bottom: 10px;
     }
 }
