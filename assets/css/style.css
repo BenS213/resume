@@ -79,7 +79,7 @@ header :hover {
 .aboutMe {
     display: flex;
     flex-wrap: wrap;
-    margin: 5px 0;
+    margin: 500px 0;
 }
 
 .aboutMe h1 {
@@ -130,15 +130,14 @@ header :hover {
     flex-wrap: wrap;
     min-width: 300px;
     min-height: 200px;
-    /* border: 5px solid var(--accent-clr); */
     background-image: url(../images/coming-soon.png);
     background-size: cover;
     background-repeat: no-repeat;
     margin: 10px;
     text-decoration: none;
     color: var(--accent-clr);
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px var(--accent-clr);
+    border-radius: 3px;
+    box-shadow: 0 0 10px var(--accent-clr);
     transition: 0.2s ease-out;
 
 }
@@ -146,6 +145,10 @@ header :hover {
 #Horiseon {
     background-image: url(../images/HoriseonScreenCapture.png);
     flex-basis: 100%;
+}
+
+#personalMix {
+    background-image: url(../images/personalMix.PNG);
 }
 
 .text {
@@ -160,8 +163,8 @@ header :hover {
 
 
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 5px 5px 20px #4a4a4a;
+    transform: scale(1.008);
+    box-shadow: none;
 
 }
 
