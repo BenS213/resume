@@ -151,6 +151,10 @@ header :hover {
     background-image: url(../images/personalMix.PNG);
 }
 
+#TicTac {
+    background-image: url(../images/TIC-TAC-ScreenCapture.PNG);
+}
+
 .text {
     padding: 0 10px;
     background-color:var(--accent-clr);
